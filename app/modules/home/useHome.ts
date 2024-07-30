@@ -1,6 +1,8 @@
 import {useEffect, useCallback, useRef} from 'react';
 import {FlatList} from 'react-native';
+
 import {useDispatch, useSelector} from 'react-redux';
+
 import {AppDispatch, RootState} from '../../redux/store';
 import {fetchCharacters} from '../../redux/features/characters/charactersThunks';
 import {
@@ -51,7 +53,7 @@ const useHome = () => {
     dispatch(setFilteredCharacters(filtered));
   }, [searchQuery, characters, sortOrder, dispatch]);
 
-  // Load more characters when scrolling
+  // Load more characters when scrolling (PAGINATION WITH INFINTE SCOLL)
   const handleLoadMore = useCallback(() => {
     if (currentPage < totalPages && status !== 'loading') {
       dispatch(fetchCharacters({page: currentPage + 1}));

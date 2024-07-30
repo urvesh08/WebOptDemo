@@ -41,7 +41,6 @@ const Home: React.FC = () => {
     handleLoadMore,
     setSearchQuery,
     handleCardPress,
-
     setIsModalVisible,
   } = useHome();
 

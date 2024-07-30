@@ -5,12 +5,12 @@ export const styles = StyleSheet.create({
   card: {
     flex: 1,
     elevation: 20,
-    shadowRadius: 5,
     shadowOpacity: 0.3,
     margin: moderateScale(9),
     shadowColor: Colors.black,
     padding: moderateScale(10),
     backgroundColor: Colors.white,
+    shadowRadius: moderateScale(5),
     borderRadius: moderateScale(10),
     shadowOffset: {width: 0, height: 2},
   },
