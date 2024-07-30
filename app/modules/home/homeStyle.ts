@@ -27,7 +27,7 @@ const styles = StyleSheet.create({
     fontSize: moderateScale(22),
   },
   iconAndInputContaine: {
-    width: '80%',
+    width: '75%',
     borderWidth: 1,
     flexDirection: 'row',
     alignItems: 'center',
@@ -48,16 +48,18 @@ const styles = StyleSheet.create({
     width: '100%',
   },
   searchInput: {
-    width: '95%',
+    width: '80%',
+    marginVertical: moderateScale(15),
     backgroundColor: Colors.white,
     fontSize: moderateScale(17),
-    borderColor: Colors.gradient,
+    borderColor: Colors.darkGray,
     borderRadius: moderateScale(10),
-    marginHorizontal: moderateScale(10),
+    paddingHorizontal: horizontalScale(15),
     paddingVertical: GlobalMetrics.isIos
       ? moderateScale(15)
       : moderateScale(10),
     color: Colors.black,
+    borderWidth: 1,
   },
   filterIcon: {
     width: moderateScale(30),
@@ -72,6 +74,7 @@ const styles = StyleSheet.create({
     marginVertical: verticalScale(20),
   },
   menuText: {
+    fontWeight: '500',
     textAlign: 'center',
     color: Colors.white,
     textAlignVertical: 'center',

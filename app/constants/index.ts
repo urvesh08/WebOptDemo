@@ -6,7 +6,7 @@ const Routes = Object.freeze({
 // Strings Constants
 const Strings = Object.freeze({
   welcomeMessage: 'Welcome to Rick and Morty App',
-  searchPlaceholder: 'Search...',
+  searchPlaceholder: 'Search ...',
   noDataFound: 'No data found',
   characterDetail: {
     species: 'Species:',

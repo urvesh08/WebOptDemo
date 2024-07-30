@@ -63,16 +63,14 @@ const Home: React.FC = () => {
           </View>
 
           <View style={styles.searchAndFilterContainer}>
-            <View style={styles.iconAndInputContaine}>
-              <Image source={icons.search} style={styles.searchIcon} />
-              <TextInput
-                placeholder={Strings.searchPlaceholder}
-                onChangeText={setSearchQuery}
-                value={searchQuery}
-                placeholderTextColor={Colors.placeholder}
-                style={styles.searchInput}
-              />
-            </View>
+            <TextInput
+              placeholder={Strings.searchPlaceholder}
+              onChangeText={setSearchQuery}
+              value={searchQuery}
+              placeholderTextColor={Colors.placeholder}
+              style={styles.searchInput}
+            />
+
             <Menu>
               <MenuTrigger>
                 <Image source={icons.filter2} style={styles.filterIcon} />

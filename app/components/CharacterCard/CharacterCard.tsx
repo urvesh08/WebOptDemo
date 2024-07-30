@@ -11,9 +11,7 @@ const CharacterCard: React.FC<CharacterCardProps> = ({
   return (
     <View style={styles.card}>
       <TouchableOpacity onPress={() => onPressCard(character)}>
-        <View style={styles.imageContainer}>
-          <Image source={{uri: character.image}} style={styles.image} />
-        </View>
+        <Image source={{uri: character.image}} style={styles.image} />
         <View style={styles.info}>
           <Text style={styles.name} numberOfLines={2}>
             {character.name ?? ''}
